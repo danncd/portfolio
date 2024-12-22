@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danny</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+
+            <!-- Header -->
+
+            <div class="header">
+
+                <!-- Profile -->
+
+                <div class="profile">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <h1>DANNY</h1>
+                    <h2>Software Engineer</h2>
+                    <div class="social-media-list">
+                        <a href="https://www.linkedin.com/in/danncd/" target="_blank">
+                            <img src="images/linkedin.svg" alt="">
+                        </a>
+                        <a href="https://github.com/danncd" target="_blank">
+                            <img src="images/github.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="profile-separator"></div>
+                    <div class="navigation-bar">
+                        <ul>
+                            <li><a href="#" onclick="showSection('projects')">PROJECTS</a></li>
+                            <li><a href="#" onclick="showSection('aboutme')">ABOUT ME</a></li>
+                            <li><a href="#" onclick="showSection('contact')">CONTACT ME</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Section Content -->
+
+            <div class="section-content">
+
+                <!-- Projects -->
+
+                <div id="projects" class="section">
+                    <h2 class="section-title">PROJECTS</h2>
+                    <div class="projects">
+                        <div class="projects-list project-1">
+                            <div class="project-content">
+                                <img src="images/projects/project-1.jpg" alt="">
+                                <div class="project-image-content">
+                                    <h2>Portfolio Website</h2>
+                                    <h3>HTML • CSS • JavaScript</h3>
+                                    <h4>This is my portfolio website, designed to showcase my projects and skills as a software engineer.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-list project-1">
+                            <div class="project-content">
+                                <img src="images/projects/project-1.jpg" alt="">
+                                <div class="project-image-content">
+                                    <h2>Portfolio Website</h2>
+                                    <h3>HTML • CSS • JavaScript</h3>
+                                    <h4>This is my portfolio website, designed to showcase my projects and skills as a software engineer.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Me -->
+
+                <div id="aboutme" class="section" style="display:none;">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <div class="skills">
+                        <p>
+                            Hi, my name is Danny! I am current Computer Science student
+                            with an expected graduation in 2026. I am currently learning new technologies to further
+                            increase my skill set.
+                        <br>
+                        <br>
+                            </p>
+                        <h4>MY SKILLS</h4>
+                        <br>
+                        <div class="skills-icons">
+                            <div class="icons java">
+                                <img src="images/java.svg" alt="">
+                                <h3>Java</h3>
+                            </div>
+                            <div class="icons cpp">
+                                <img src="images/cpp.svg" alt="">
+                                <h3>C++</h3>
+                            </div>
+                            <div class="icons html">
+                                <img src="images/HTML.svg" alt="">
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="icons css">
+                                <img src="images/css.svg" alt="">
+                                <h3>CSS</h3>
+                            </div>
+                            <div class="icons javascript">
+                                <img src="images/javascript.svg" alt="">
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class="icons python">
+                            <img src="images/python.svg" alt="">
+                            <h3>Python</h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Me -->
+
+                <div id="contact" class="section" style="display:none;">
+                    <h2 class="section-title">CONTACT ME</h2>
+                    <div class="contact-me">
+                        <p>Feel free to reach out to me through any of these social media channels!</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="contact-list">
+                        <div class="email contact-list-container">
+                            <a href="mailto:ydanncdc@gmail.com">
+                                <img src="images/mail.svg" alt="">
+                            </a>
+                            <div class="contact-separator"></div>
+                            <a class="contact-link" href="mailto:ydanncdc@gmail.com">
+                                <h3>ydanncdc@gmail.com</h3>
+                            </a>
+                        </div>
+                        <div class="linkedin contact-list-container">
+                            <a href="https://www.linkedin.com/in/danncd/" target="_blank">
+                                <img src="images/linkedin.svg" alt="">
+                            </a>
+                            <div class="contact-separator"></div>
+                            <a class="contact-link" href="https://www.linkedin.com/in/danncd/" target="_blank">
+                                <h3>linkedin.com/in/danncd/</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script that hides sections -->
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';
+
+            localStorage.setItem('activeSection', sectionId);
+        }
+
+        function loadActiveSection() {
+            const activeSectionId = localStorage.getItem('activeSection');
+
+            if (activeSectionId) {
+                showSection(activeSectionId);
+            } else {
+
+                showSection('projects');
+            }
+        }
+        window.onload = loadActiveSection;
+    </script>
+</body>
+</html>
