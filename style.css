@@ -1,0 +1,144 @@
+/*
+
+    Body - Background
+
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F9F9F9;
+    overflow: hidden;
+
+    font-family: "Poppins", "sans-serif";
+}
+
+/*
+
+    Header
+
+ */
+
+.header {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    width: 25%;
+}
+
+.logo-content {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    width: 75%;
+}
+
+.stats {
+    text-align: center;
+}
+
+.logo-content h1{
+    margin: 0;
+    font-size: 38px;
+    font-weight: 450;
+}
+
+.logo-content h2{
+    margin: 0;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+
+.logo-box img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.header-info {
+    margin-bottom: 10px;
+}
+.header-info h1{
+    font-size: 45px;
+    font-weight: 450;
+    margin: 0;
+}
+
+.header-info p{
+    margin: 0;
+    font-size: 39px;
+}
+
+.header-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-buttons a{
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.header-buttons button {
+    all: unset;
+    background-color: #EFEFEF;
+    color: black;
+    font-size: 30px;
+    font-weight: 450;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 90px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.header-navigation .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-navigation .nav-item img{
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #D6D6D6;
+    padding: 10px;
+}
+
+.header-navigation .nav-item h1 {
+    margin: 10px 0 0 0;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.header-separator {
+    height: 2px;
+    background-color: #999999;
+    margin-left: 20px;
+    margin-right: 20px;
+}
