@@ -4,7 +4,7 @@
 
  */
 
- html, body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -115,6 +115,11 @@
     gap: 90px;
     overflow-x: auto;
     scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.header-navigation::-webkit-scrollbar {
+    display: none;
 }
 
 .header-navigation .nav-item{
