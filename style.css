@@ -83,7 +83,7 @@ a {
 .container-style {
     border-radius: 18px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255, 0.95);
 }
 
 .projects-container {
@@ -361,5 +361,9 @@ a {
 
     .profile-info-right-image {
         background-size: cover;
+    }
+    .project-information-text {
+        justify-content: unset;
+        height: 170px;
     }
 }
