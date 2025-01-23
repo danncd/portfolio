@@ -78,6 +78,8 @@ a {
     background-color: azure;
 }
 
+
+
 .container-style {
     border-radius: 18px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
@@ -167,6 +169,37 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.clock {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px
+}
+.clock-format {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 550;
+    background-color: rgb(255, 255, 255, 0.85);
+}
+.profile-info-right-image h3 {
+    font-size: 30px;
+}
+.profile-info-right-image h2 {
+    width: auto;
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 450;
+    background-color: rgb(255, 255, 255, 0.85);
 }
 .navigation-list {
     padding: 0 100px 0 100px;
