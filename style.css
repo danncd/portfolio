@@ -260,10 +260,25 @@ a {
     gap: 10px;
 }
 
-.project-technologies img{
-    height: 55px;
+.technologies {
+    color: black;
+    font-size: 17px;
+    font-weight: 450;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
 }
 
+.javascript {
+    background-color: #F3E787;
+}
+
+.html {
+    background-color: #EB8361;
+}
+
+.css {
+    background-color: #0BA6FE;
+}
 @media (max-width: 1079px) {
     .content-inside {
         width: 100%;
