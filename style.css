@@ -205,13 +205,13 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    transform: translateY(20px);
+    transform: translateY(10px);
 }
 .project-information-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 175px;
+    height: 185px;
 }
 .project-information h2 {
     font-size: 25px;
@@ -243,6 +243,8 @@ a {
 }
 .project-left img {
     width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .project-technologies {
@@ -283,13 +285,13 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0;
+        gap: 20px;
     }
     .project-information {
         height: 275px;
     }
     .project-left img {
-        width: 85vw;
+        width: 80vw;
     }
 
     .project-information {
