@@ -7,142 +7,292 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
-    background-color: #F9F9F9;
+    background-color: #F5F5F7;
 
-    font-family: "Poppins", "sans-serif";
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    color: black;
+}
+/*
+
+    Content
+
+ */
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-inside {
+    width: 1080px;
+}
+
+.profile-info {
+    width: calc(100% - 40px);
+    padding: 20px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-info-left {
+    width: 35%;
+    height: 100%;
+}
+
+.profile-info-right {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.profile-info-right-about {
+    height: 75%;
+}
+
+.profile-info-right-image {
+    height: 25%;
+    background-color: azure;
+}
+
+.container-style {
+    border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
+    background-color: #FFFFFF;
+}
+
+.projects-container {
+    width: 1080px;
+
 }
 
 /*
 
-    Header
+    Left Container - Profile
 
  */
 
-.header {
-    margin: 40px;
+.profile-info-left-content{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.logo {
-    display: flex;
     align-items: center;
-}
-
-.logo-box {
-    width: 25%;
-}
-
-.logo-content {
-    display: flex;
-    gap: 20%;
     justify-content: center;
-    width: 75%;
+    gap: 15px;
 }
-
-.stats {
-    text-align: center;
-}
-
-.logo-content h1{
-    margin: 0;
-    font-size: 38px;
-    font-weight: 450;
-}
-
-.logo-content h2{
-    margin: 0;
-    font-size: 37px;
-    font-weight: 400;
-}
-
-
-.logo-box img {
-    border-radius: 50%;
+.profile-info-left-content img {
     width: 200px;
+    border-radius: 100px;
 }
 
-.header-info {
-    margin-bottom: 10px;
-}
-.header-info h1{
-    font-size: 45px;
-    font-weight: 450;
-    margin: 0;
-}
-
-.header-info p{
-    margin: 0;
-    font-size: 39px;
-}
-
-.header-buttons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.header-buttons a{
-    width: 100%;
-    text-decoration: none;
-    margin-bottom: 25px;
-}
-
-.header-buttons button {
-    all: unset;
-    background-color: #EFEFEF;
-    color: black;
-    font-size: 30px;
-    font-weight: 450;
-    width: 100%;
-    text-align: center;
-    display: block;
-    border: none;
-    border-radius: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.header-navigation {
-    display: flex;
-    gap: 90px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.header-navigation::-webkit-scrollbar {
-    display: none;
-}
-
-.header-navigation .nav-item{
+.profile-name {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2px;
+}
+.profile-info-left-content h1 {
+    font-weight: 600;
+    font-size: 25px;
 }
 
-.header-navigation .nav-item img{
-    width: 120px;
-    border-radius: 50%;
-    border: 10px solid #D6D6D6;
-    padding: 10px;
+.profile-info-left-content h3 {
+    font-weight: 450;
+    font-size: 16px;
 }
 
-.header-navigation .nav-item h1 {
-    margin: 10px 0 0 0;
-    font-size: 35px;
-    font-weight: 400;
+.contact {
+    display: flex;
+    gap: 15px;
 }
 
-.header-separator {
-    height: 2px;
-    background-color: #999999;
-    margin-left: 20px;
-    margin-right: 20px;
+.contact img {
+    width: 40px;
+}
+/*
+
+    Right Container - Profile
+
+ */
+
+.profile-info-right-about {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-info-right-about h2 {
+    font-size: 25px;
+    font-weight: 650;
+    background-image: linear-gradient(to right, #7CBEF6, #c73fff);
+    color: transparent;
+    background-clip: text;
+}
+
+.profile-info-right-about h3 {
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.profile-info-right-image {
+    height: 130px;
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-list {
+    padding: 0 100px 0 100px;
+    height: auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 50px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+
+    Projects - Content
+
+ */
+
+.project-content {
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+.project-information {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform: translateY(20px);
+}
+.project-information-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 175px;
+}
+.project-information h2 {
+    font-size: 25px;
+    font-weight: 650;
+    background-image: linear-gradient(to right, #7de4b9, #5cb6f5);
+    color: transparent;
+    background-clip: text;
+}
+
+.project-information h3 {
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.project-title a{
+    color: black;
+    font-style: italic;
+}
+
+.project {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.project-left img {
+    width: 500px;
+}
+
+.project-technologies {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.project-technologies img{
+    height: 55px;
+}
+
+@media (max-width: 1079px) {
+    .content-inside {
+        width: 100%;
+    }
+    .profile-info {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .profile-info-left {
+        width: 100%;
+    }
+    .profile-info-left-content {
+        height: 375px;
+    }
+    .profile-info-right {
+        width: 100%;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+    .project {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .project-information {
+        height: 275px;
+    }
+    .project-left img {
+        width: 85vw;
+    }
+
+    .project-information {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .project-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-info-right-image {
+        background-size: cover;
+    }
 }
