@@ -206,10 +206,15 @@ a {
     flex-direction: column;
     height: 100%;
     transform: translateY(10px);
+    align-items: center;
+    justify-content: center;
 }
 .project-information-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 20px;
     height: 185px;
 }
@@ -251,7 +256,7 @@ a {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     gap: 10px;
 }
 
