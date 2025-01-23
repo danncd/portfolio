@@ -236,6 +236,11 @@ a {
     gap: 20px;
     width: 100%;
 }
+.project-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .project-left img {
     width: 500px;
 }
