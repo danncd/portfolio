@@ -150,7 +150,7 @@ a {
 
 .profile-info-right-about h2 {
     font-size: 25px;
-    font-weight: 650;
+    font-weight: 750;
     background-image: linear-gradient(to right, #7CBEF6, #c73fff);
     color: transparent;
     background-clip: text;
@@ -251,8 +251,8 @@ a {
     height: 185px;
 }
 .project-information h2 {
-    font-size: 25px;
-    font-weight: 650;
+    font-size: 20px;
+    font-weight: 900;
     background-image: linear-gradient(to right, #7de4b9, #5cb6f5);
     color: transparent;
     background-clip: text;
