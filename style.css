@@ -8,6 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     background: linear-gradient(to bottom right, #f5f5f7, #E6ECF7, #F2F5FB);
     text-size-adjust: none;
     text-rendering: optimizeLegibility;
@@ -48,13 +49,13 @@ a {
 }
 
 .profile-info {
-    width: calc(100% - 40px);
-    padding: 20px;
+    width: calc(100% - 30px);
+    padding: 15px;
     height: 380px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .profile-info-left {
@@ -66,7 +67,7 @@ a {
     width: 65%;
     height: 100%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-direction: column;
 }
 .profile-info-right-about {
@@ -121,7 +122,7 @@ a {
     font-size: 25px;
 }
 
-.profile-info-left-content h3 {
+.profile-info-left-content p {
     font-weight: 450;
     font-size: 16px;
 }
@@ -144,8 +145,8 @@ a {
     height: 65%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
 }
 
 .profile-info-right-about h2 {
@@ -156,7 +157,7 @@ a {
     background-clip: text;
 }
 
-.profile-info-right-about h3 {
+.profile-info-right-about p {
     font-size: 18px;
     font-weight: 350;
 }
@@ -207,7 +208,7 @@ a {
     display: flex;
     flex: 1;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 .navigation-item {
     background-color: rgba(255, 255, 255, 0.9);
@@ -225,8 +226,8 @@ a {
  */
 
 .project-content {
-    margin: 0 20px 20px 20px;
-    padding: 20px;
+    margin: 0 15px 15px 15px;
+    padding: 15px;
 }
 
 .project {
@@ -247,7 +248,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
     height: 185px;
 }
 .project-information h2 {
@@ -258,7 +259,7 @@ a {
     background-clip: text;
 }
 
-.project-information h3 {
+.project-information p {
     font-size: 18px;
     font-weight: 350;
 }
@@ -270,7 +271,7 @@ a {
 
 .project {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
 }
 .project-left {
@@ -297,7 +298,7 @@ a {
     font-size: 17px;
     font-weight: 450;
     border-radius: 5px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 15px 10px 15px;
 }
 
 .javascript {
@@ -312,6 +313,9 @@ a {
     background-color: #0BA6FE;
 }
 @media (max-width: 1079px) {
+    .content {
+        gap: 30px;
+    }
     .content-inside {
         width: 100%;
     }
@@ -337,7 +341,7 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
     }
     .project-information {
         height: 275px;
