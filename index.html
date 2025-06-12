@@ -20,8 +20,8 @@
 
     <body class="m-0 p-0 bg-[#f5f5f5]">
 
-        <header class="fixed w-full backdrop-blur-sm py-4">
-            <div class="flex max-w-[680px] min-w-[380px] mx-auto justify-between">
+        <header class="fixed w-full backdrop-blur-sm py-4 z-10">
+            <div class="flex max-w-[680px] mx-4 md:mx-auto justify-between">
                 <a href="/" aria-label="Go to Home Page" class="h-[45px]">
                     <img src="images/header.jpeg" alt="Header Image" class="h-[45px] rounded-full">
                 </a>
@@ -45,7 +45,7 @@
             </div>
         </header>
 
-        <main class="max-w-[680px] min-w-[380px] mx-auto py-[77px]">
+        <main class="max-w-[680px] py-[77px] mx-4 md:mx-auto">
 
             <section class="flex flex-col gap-[20px]">
                 <div class="flex flex-col gap-0">
@@ -64,9 +64,9 @@
                 <div>
                     <p class="text-lg text-gray-800 font-semibold">Projects</p>
                 </div>
-                <article class="flex flex-row gap-[30px]">
-                    <div class="w-48 h-48 overflow-hidden rounded-md">
-                        <img src="images/palettes-project.png" alt="Palette Project" class="w-48 h-48 object-cover object-center scale-110">
+                <article class="flex flex-col md:flex-row gap-[30px] items-center">
+                    <div class="md:w-48 md:h-48 overflow-hidden rounded-md">
+                        <img src="images/palettes-project.png" alt="Palette Project" class="md:w-48 md:h-48 object-cover scale-110">
                     </div>
                     <div class="flex flex-col flex-1">
                         <div class="flex flex-col gap-[20px] flex-1">
