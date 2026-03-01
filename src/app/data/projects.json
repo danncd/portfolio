@@ -1,0 +1,18 @@
+[
+	{
+		"title": "🎥 Animebox",
+		"date": "July 2025",
+		"line1": "Animebox is a full-stack web application designed for users to explore seasonal releases and engage through community reviews.",
+        "line2": "The website was built using Next.js, TypeScript, TalwindCSS, and Supabase.",
+		"link": "https://animebox.danncd.com/",
+		"github": "https://github.com/danncd/animebox"
+	},
+	{
+		"title": "🎨 Palettes",
+		"date": "December 2024",
+		"line1": "Palettes features a random color generator where users can generate up to 8 colors. The color generator has the following features: color locking, undo button, and brightness adjustment.",
+        "line2": "The website was built using HTML, CSS, and JavaScript.",
+		"link": "https://palettes.danncd.com/",
+		"github": "https://github.com/danncd/palettes"
+	}
+]
