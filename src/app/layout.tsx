@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
 	title: "Danny Chu Yang | Personal Website",
-	description: "My personal website showcasing my projects.",
+	description: "Personal website showcasing my projects.",
 };
 
 export default function RootLayout({
