@@ -8,6 +8,7 @@ export type Project = {
 	line2: string;
 	link: string;
 	github: string;
+	tags: string[];
 };
 
 export function getProjects(): Project[] {
