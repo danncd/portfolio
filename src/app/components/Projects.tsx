@@ -23,7 +23,7 @@ export default function Projects({ tags, projects } : ProjectProps) {
 						className={`${selectedTag === tag
                             ? "bg-black dark:bg-blue-500 text-white"
                             : "bg-gray-200 hover:bg-gray-300"}
-                            px-2 py-1 text-sm text-black rounded-md cursor-pointer`}
+                            px-3 py-1 text-sm text-black rounded-full cursor-pointer`}
                         onClick={() => setSelectedTag(tag)}
 					>
 						{tag}
