@@ -22,8 +22,8 @@ export default function Projects({ tags, projects } : ProjectProps) {
 						key={tag}
 						className={`${selectedTag === tag
                             ? "bg-black dark:bg-blue-500 text-white"
-                            : "bg-gray-200 dark:text-black hover:bg-gray-300"}
-                            px-2 py-1 text-sm rounded-md cursor-pointer ease-in-out transition-all duration-200`}
+                            : "bg-gray-200 hover:bg-gray-300"}
+                            px-2 py-1 text-sm text-black rounded-md cursor-pointer`}
                         onClick={() => setSelectedTag(tag)}
 					>
 						{tag}

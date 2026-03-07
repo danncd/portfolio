@@ -23,7 +23,10 @@ export default function Nav() {
 			</div>
 			<div className="text-gray-600 flex flex-col items-end">
 				<span className="dark:text-gray-400">Queens, NY</span>
-				<span className="flex items-center h-full">
+				<span className="flex items-center h-full flex-row gap-2">
+					<span className="dark:text-gray-400">
+						{darkMode ? "Dark" : "Light"}
+					</span>
 					<button
 						onClick={() => setDarkMode(!darkMode)}
 						className={`w-10 h-5 flex items-center rounded-full	pl-0.5 pr-0.5 cursor-pointer transition-colors duration-300
