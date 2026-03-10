@@ -11,12 +11,12 @@
 		]
 	},
 	{
-		"title": "Animebox",
+		"title": "Anime Index",
 		"date": "July 2025",
 		"line1": "A full-stack web app for discovering seasonal anime releases and engaging with the community through reviews and ratings.",
         "line2": "The website was built using Next.js, TypeScript, TalwindCSS, and Supabase.",
-		"link": "https://animebox.danncd.com/",
-		"github": "https://github.com/danncd/animebox",
+		"link": "https://aindex.danncd.com/",
+		"github": "https://github.com/danncd/anime-index",
 		"tags": [
 			"TypeScript"
 		]
