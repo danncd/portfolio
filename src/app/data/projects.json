@@ -1,5 +1,17 @@
 [
 	{
+		"title": "UI Components",
+		"date": "March 2026",
+		"line1": "A set of React components made in Next.js. Built to be copied, pasted, and customized according to requirements or styles.",
+        "line2": "The components were made with TypeScript and TailwindCSS.",
+		"link": "https://ui.danncd.com/",
+		"github": "https://github.com/danncd/ui-components",
+		"tags": [
+			"TypeScript",
+			"TailwindCSS"
+		]
+	},
+	{
 		"title": "Item Frame Cache",
 		"date": "February 2026",
 		"line1": "A Minecraft client-side mod that caches item frames locally, ensuring they render correctly even when a server’s simulation distance is low.",

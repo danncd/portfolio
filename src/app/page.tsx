@@ -16,4 +16,4 @@ export default function Home() {
             <Projects projects={projects} tags={tags}/>
 		</div>
 	);
-}
+}``

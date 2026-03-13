@@ -15,7 +15,7 @@ export default function Projects({ tags, projects } : ProjectProps) {
     
 	return (
 		<section className="my-8 flex flex-col gap-6">
-			<h2 className="font-bold text-xl">Projects</h2>
+			<h2 className="font-bold text-xl"> My Projects</h2>
 			<div className="flex gap-2 flex-wrap">
 				{tags.map((tag) => (
 					<button
