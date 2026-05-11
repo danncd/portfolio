@@ -20,7 +20,11 @@ export default function RootLayout({
 
 	return (
 		<html lang="en">
-			<body className={`px-2 dark:bg-[#121212] dark:text-gray-100`}>{children}</body>
+			<body className={`dark:bg-[#121212] dark:text-gray-100 p-4`}>
+				<div className="max-w-255 w-full mx-auto">
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }

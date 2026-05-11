@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Project } from "../lib/actions";
 import ProjectCard from "./ProjectCard";
+import { manrope } from "../lib/fonts";
 
 type ProjectProps = {
 	tags: string[];
@@ -14,8 +15,8 @@ export default function Projects({ tags, projects } : ProjectProps) {
     const [selectedTag, setSelectedTag] = useState("All");
     
 	return (
-		<section className="my-8 flex flex-col gap-6">
-			<h2 className="font-bold text-xl"> My Projects</h2>
+		<section className="my-8 flex flex-col gap-4">
+			<h2 className={`${manrope.className} font-bold text-xl`}> My Projects</h2>
 			<div className="flex gap-2 flex-wrap">
 				{tags.map((tag) => (
 					<button

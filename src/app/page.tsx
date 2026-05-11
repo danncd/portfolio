@@ -10,7 +10,7 @@ export default function Home() {
     console.log(tags);
 
 	return (
-		<div className="max-w-190 w-full mx-auto my-4 px-2">
+		<div className="">
 			<Nav />
             <AboutMe/>
             <Projects projects={projects} tags={tags}/>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { manrope } from "../lib/fonts";
 
 export default function Nav() {
 
@@ -17,8 +18,8 @@ export default function Nav() {
 
 	return (
 		<nav className="flex flex-row justify-between">
-			<div className="flex flex-col items-start justify-start">
-				<h1 className="font-bold text-xl">Danny Chu Yang</h1>
+			<div className={`${manrope.className} flex flex-col items-start justify-start`}>
+				<h1 className="font-extrabold text-2xl">Danny Chu Yang</h1>
 				<span className="text-md text-gray-600 dark:text-gray-400">B.S., Major in Computer Science</span>
 			</div>
 			<div className="text-gray-600 flex flex-col items-end">

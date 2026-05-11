@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { manrope } from "../lib/fonts";
 
 export default function AboutMe() {
 	return (
-		<section className="my-8 flex flex-col gap-6">
-			<h2 className="font-bold text-xl">About Me</h2>
-			<div className="flex flex-col gap-4">
+		<section className="my-8 flex flex-col gap-3">
+			<h2 className={`${manrope.className} font-bold text-xl`}>About Me</h2>
+			<div className="flex flex-col gap-3">
 				<p>
 					Hello! I'm a computer science student, currently exploring
 					full-stack web development, cloud technologies, and machine

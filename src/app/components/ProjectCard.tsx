@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Project } from "../lib/actions";
+import { manrope } from "../lib/fonts";
 
 type ProjectProps = {
     project: Project;
@@ -11,7 +12,7 @@ export default function ProjectCard({ project }: ProjectProps) {
 			<div className="border-r-gray-300 dark:border-r-gray-600 border-r-4 mr-3 ml-1" />
 			<div className="flex flex-col gap-2">
 				<div className="flex flex-col">
-					<span className="font-bold text-lg">{project.title}</span>
+					<span className={`${manrope.className} font-bold text-lg`}>{project.title}</span>
 					<div className="flex items-center gap-3 text-sm text-gray-700">
 						<span className="text-gray-600 dark:text-gray-400">{project.date}</span>
 						<span className="h-1.5 w-1.5 rounded-full bg-gray-700 dark:bg-gray-400"></span>
