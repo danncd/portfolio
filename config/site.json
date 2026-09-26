@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "name": "Portfolio",
+    "title": "Danny Chu Yang",
+    "description": "Projects and notes by Danny Chu Yang, a computer science student at Queens College.",
+    "logo": "/portfolio-robot.png",
+    "defaultPage": "/me/home",
+    "layout": {
+        "headerHeight": 54,
+        "readingWidth": 960,
+        "sidebar": {
+            "defaultWidth": 252,
+            "minWidth": 190,
+            "maxWidth": 360,
+            "collapseThreshold": 150,
+            "resistanceStart": 210,
+            "minContentWidth": 320,
+            "transitionMs": 200
+        }
+    }
+}

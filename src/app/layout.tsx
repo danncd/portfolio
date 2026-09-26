@@ -1,30 +1,42 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import type { CSSProperties, ReactNode } from "react";
+import { loadSiteDefinition } from "@/features/content/loaders/site.server";
+import { toNavigationSections } from "@/features/content/navigation";
+import { PortfolioShell } from "./components/PortfolioShell";
+import { sidebarInitScript } from "@/features/shell/state/preferences";
+import "@/styles/globals.css";
 
-const roboto = Roboto({
-	subsets: ["latin"],
-	weight: ["100", "300", "400", "500", "700"],
-});
+export async function generateMetadata(): Promise<Metadata> {
+    const { site } = await loadSiteDefinition();
+    return {
+        title: site.title,
+        description: site.description,
+        icons: site.logo ? { icon: site.logo, apple: site.logo } : undefined,
+    };
+}
 
-export const metadata: Metadata = {
-	title: "Danny Chu Yang | Personal Website",
-	description: "Personal website showcasing my projects.",
-};
+export default async function RootLayout({ children }: { children: ReactNode }) {
+    const { site, navigation } = await loadSiteDefinition();
+    const layoutStyle = {
+        "--header-height": `${site.layout.headerHeight}px`,
+        "--reading-width": `${site.layout.readingWidth}px`,
+        "--sidebar-duration": `${site.layout.sidebar.transitionMs}ms`,
+        "--sidebar-default-width": `${site.layout.sidebar.defaultWidth}px`,
+    } as CSSProperties;
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-
-	return (
-		<html lang="en">
-			<body className={`dark:bg-[#121212] dark:text-gray-100 p-4`}>
-				<div className="max-w-255 w-full mx-auto">
-					{children}
-				</div>
-			</body>
-		</html>
-	);
+    return (
+        // The saved-width script adds a style attribute before hydration.
+        <html lang="en" suppressHydrationWarning>
+            <head>
+                <script
+                    dangerouslySetInnerHTML={{ __html: sidebarInitScript(site.layout.sidebar) }}
+                />
+            </head>
+            <body className="bg-canvas font-sans text-ink antialiased" style={layoutStyle}>
+                <PortfolioShell site={site} sections={toNavigationSections(navigation)}>
+                    {children}
+                </PortfolioShell>
+            </body>
+        </html>
+    );
 }

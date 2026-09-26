@@ -1,0 +1,22 @@
+.markdown .project-list {
+    list-style: disc;
+    padding: 0 0 0 23px;
+    margin: 0;
+}
+.markdown .project-list li {
+    padding-left: 6px;
+}
+.markdown .project-list li + li {
+    margin-top: 0;
+}
+.markdown .project-link {
+    text-decoration: none;
+}
+.markdown .project-list li:first-child .project-link {
+    padding-top: 0;
+    min-height: 0;
+}
+.markdown .project-link:is(:hover, :focus-visible) .project-title {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}

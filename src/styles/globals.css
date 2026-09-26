@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "../features/shell/styles/shell.css";
+@import "../features/markdown/styles/markdown.css";
+@import "../features/markdown/styles/code.css";
+@import "../features/markdown/styles/syntax.css";
+@import "../features/projects/styles/projects.css";
+
+@layer base {
+    *,
+    *::before,
+    *::after {
+        corner-shape: squircle;
+    }
+    :root {
+        color-scheme: light dark;
+    }
+    html,
+    body {
+        overscroll-behavior: none;
+    }
+    body {
+        margin: 0;
+    }
+    :focus-visible {
+        outline: 2px solid var(--color-link);
+        outline-offset: 4px;
+    }
+}

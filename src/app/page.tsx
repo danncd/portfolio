@@ -1,19 +1,7 @@
+import { redirect } from "next/navigation";
+import { loadSiteDefinition } from "@/features/content/loaders/site.server";
 
-import Nav from "./components/Nav";
-import { getProjects, Project } from "./lib/actions";
-import Projects from "./components/Projects";
-import AboutMe from "./components/AboutMe";
-
-export default function Home() {
-	const projects: Project[] = getProjects();
-    const tags = ["All", ...new Set(projects.flatMap(p => p.tags).toSorted())];
-    console.log(tags);
-
-	return (
-		<div className="">
-			<Nav />
-            <AboutMe/>
-            <Projects projects={projects} tags={tags}/>
-		</div>
-	);
-}``
+export default async function Home() {
+    const { site } = await loadSiteDefinition();
+    redirect(site.defaultPage);
+}

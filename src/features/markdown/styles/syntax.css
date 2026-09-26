@@ -1,0 +1,73 @@
+.markdown {
+    --syntax-keyword: #9250a3;
+    --syntax-string: #9a4934;
+    --syntax-number: #236e68;
+    --syntax-title: #316baf;
+    --syntax-type: #867019;
+    --syntax-comment: #70806d;
+    --syntax-property: #366b93;
+    --syntax-symbol: #875936;
+}
+.markdown pre .hljs-keyword,
+.markdown pre .hljs-selector-tag,
+.markdown pre .hljs-meta .hljs-keyword {
+    color: var(--syntax-keyword);
+}
+.markdown pre .hljs-string,
+.markdown pre .hljs-regexp,
+.markdown pre .hljs-meta .hljs-string {
+    color: var(--syntax-string);
+}
+.markdown pre .hljs-number,
+.markdown pre .hljs-literal {
+    color: var(--syntax-number);
+}
+.markdown pre .hljs-title,
+.markdown pre .hljs-section {
+    color: var(--syntax-title);
+}
+.markdown pre .hljs-built_in,
+.markdown pre .hljs-type,
+.markdown pre .hljs-title.class_ {
+    color: var(--syntax-type);
+}
+.markdown pre .hljs-comment,
+.markdown pre .hljs-quote {
+    color: var(--syntax-comment);
+}
+.markdown pre .hljs-attr,
+.markdown pre .hljs-attribute,
+.markdown pre .hljs-property,
+.markdown pre .hljs-selector-class,
+.markdown pre .hljs-selector-id {
+    color: var(--syntax-property);
+}
+.markdown pre .hljs-tag,
+.markdown pre .hljs-name,
+.markdown pre .hljs-variable,
+.markdown pre .hljs-template-variable,
+.markdown pre .hljs-symbol,
+.markdown pre .hljs-bullet,
+.markdown pre .hljs-link,
+.markdown pre .hljs-meta {
+    color: var(--syntax-symbol);
+}
+.markdown pre .hljs-emphasis {
+    font-style: italic;
+}
+.markdown pre .hljs-strong {
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+    .markdown {
+        --syntax-keyword: #c792d8;
+        --syntax-string: #d99a86;
+        --syntax-number: #7fcac0;
+        --syntax-title: #8ab4e6;
+        --syntax-type: #d9c27a;
+        --syntax-comment: #9eaf99;
+        --syntax-property: #8eb9d9;
+        --syntax-symbol: #c9a17e;
+    }
+}

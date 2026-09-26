@@ -1,0 +1,84 @@
+{
+    "version": 1,
+    "sections": [
+        {
+            "id": "me",
+            "label": "Me",
+            "items": [
+                {
+                    "id": "about",
+                    "label": "Home",
+                    "icon": "user",
+                    "page": {
+                        "path": "/me/home",
+                        "title": "Home",
+                        "content": "home.md"
+                    },
+                    "featuredProjects": ["qc-schedules", "anime-list", "arx", "item-frame-cache"]
+                }
+            ]
+        },
+        {
+            "id": "projects",
+            "label": "Projects",
+            "items": [
+                {
+                    "id": "coding",
+                    "label": "Coding",
+                    "icon": "code",
+                    "page": {
+                        "path": "/projects/coding",
+                        "title": "Coding",
+                        "content": "projects/coding.md"
+                    },
+                    "children": [
+                        {
+                            "id": "qc-schedules",
+                            "label": "QC Schedules",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/qc-schedules",
+                                "title": "QC Schedules - A Website",
+                                "content": "projects/qc-schedules.md",
+                                "description": "Course schedules and grade data."
+                            }
+                        },
+                        {
+                            "id": "anime-list",
+                            "label": "Anime List",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/anime-list",
+                                "title": "Anime List",
+                                "content": "projects/anime-list.md",
+                                "description": "Anime and manga on macOS."
+                            }
+                        },
+                        {
+                            "id": "arx",
+                            "label": "Arx",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/arx",
+                                "title": "Arx",
+                                "content": "projects/arx.md",
+                                "description": "A terminal coding agent in Go."
+                            }
+                        },
+                        {
+                            "id": "item-frame-cache",
+                            "label": "Item Frame Cache",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/item-frame-cache",
+                                "title": "Item Frame Cache",
+                                "content": "projects/item-frame-cache.md",
+                                "description": "Keep Minecraft item frames visible."
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
