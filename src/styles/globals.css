@@ -17,7 +17,8 @@
     }
     html,
     body {
-        overscroll-behavior: none;
+        /* Keep horizontal overscroll available for browser back/forward gestures. */
+        overscroll-behavior-y: none;
     }
     body {
         margin: 0;

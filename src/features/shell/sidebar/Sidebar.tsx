@@ -29,7 +29,7 @@ export function Sidebar({
                     )}
                     <span className="truncate">{name}</span>
                 </div>
-                <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-2 pb-6">
+                <div className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain px-2 pb-6">
                     {children}
                 </div>
             </div>
