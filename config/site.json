@@ -6,7 +6,7 @@
     "logo": "/portfolio-robot.png",
     "defaultPage": "/me/home",
     "layout": {
-        "headerHeight": 54,
+        "headerHeight": 58,
         "readingWidth": 960,
         "sidebar": {
             "defaultWidth": 252,
