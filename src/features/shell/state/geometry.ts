@@ -29,9 +29,11 @@ export function resolveDrag(
         open: rawWidth >= settings.collapseThreshold,
         width: Math.min(
             maximum,
-            rawWidth < resistance ? resistance - (resistance - rawWidth) * 0.25 : rawWidth,
+            Math.max(
+                settings.minWidth,
+                rawWidth < resistance ? resistance - (resistance - rawWidth) * 0.25 : rawWidth,
+            ),
         ),
-        remember: rawWidth >= Math.max(settings.minWidth, resistance),
     };
 }
 

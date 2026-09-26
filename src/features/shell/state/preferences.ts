@@ -17,7 +17,7 @@ export function readWidth(storage: StorageReader, settings: SidebarSettings) {
 
 export function writeWidth(storage: StorageWriter, width: number) {
     try {
-        storage.setItem(WIDTH_KEY, String(Math.round(width)));
+        storage.setItem(WIDTH_KEY, String(width));
     } catch {
         /* Keep the preference in memory when persistence is unavailable. */
     }

@@ -90,7 +90,7 @@ export function useSidebarLayout(settings: SidebarSettings) {
             setDesktopOpen(open);
             if (open) {
                 setWidth(next.width);
-                if (next.remember) preferred = next.width;
+                preferred = next.width;
             }
         };
         const move = (pointer: globalThis.PointerEvent) => {

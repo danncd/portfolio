@@ -11,16 +11,14 @@ const settings: SidebarSettings = JSON.parse(
     readFileSync(new URL("../../../../config/site.json", import.meta.url), "utf8"),
 ).layout.sidebar;
 
-test("reference drag resistance preserves the preferred width until a deliberate resize", () => {
+test("drag resistance preserves gentle resizing and the collapse threshold", () => {
     assert.deepEqual(resolveDrag(170, 252, 360, settings), {
         open: true,
         width: 200,
-        remember: false,
     });
     assert.deepEqual(resolveDrag(280, 252, 360, settings), {
         open: true,
         width: 280,
-        remember: true,
     });
     assert.equal(resolveDrag(149, 252, 360, settings).open, false);
     assert.equal(resolveDrag(150, 252, 360, settings).open, true);
@@ -28,8 +26,7 @@ test("reference drag resistance preserves the preferred width until a deliberate
 });
 
 test("dragging from a narrow starting width uses that width as the resistance point", () => {
-    assert.equal(resolveDrag(170, 190, 360, settings).width, 185);
-    assert.equal(resolveDrag(190, 190, 360, settings).remember, true);
+    assert.equal(resolveDrag(170, 190, 360, settings).width, 190);
 });
 
 test("viewport and drag maximum leave room for main content", () => {
@@ -110,4 +107,26 @@ test("pre-paint bootstrap applies only valid saved widths and tolerates unavaila
             },
         }),
     );
+});
+
+test("narrow and fractional drag widths survive saving and reloading", () => {
+    for (const [raw, start] of [
+        [170, 252],
+        [171, 252],
+        [170, 190],
+        [280, 252],
+    ]) {
+        const result = resolveDrag(raw, start, 360, settings);
+        assert.equal(result.open, true);
+        let stored = null as string | null;
+        writeWidth(
+            {
+                setItem: (_key, value) => {
+                    stored = value;
+                },
+            },
+            result.width,
+        );
+        assert.equal(readWidth({ getItem: () => stored }, settings), result.width);
+    }
 });
