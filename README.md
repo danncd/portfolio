@@ -1,14 +1,12 @@
 # Portfolio
 
-**Live at [qcs.danncd.com](https://danncd.com)**
+**Live at [danncd.com](https://danncd.com)**
 
-Personal website built with Next.js, React, TypeScript, and TailwindCSS.
-<br/>
-Pages are written in Markdown, with navigation and site settings defined in JSON.
+Personal website built with Next.js, React, TypeScript, and Tailwind CSS. Content is written in Markdown, with navigation and site settings configured through JSON.
 
 ## Adding content to the website
 
-Create a MD file inside content/, such as content/my-project.md:
+Create a Markdown file inside `content/`, such as `content/projects/my-project.md`:
 
 ```
 ## My Project
@@ -20,7 +18,6 @@ Project features.
 ## Implementation
 Project implementation.
 ```
-<br/>
 
 Then add an item to the appropriate section or parent's children array in config/navigation.json:
 
@@ -45,7 +42,6 @@ Add the project’s ID to the Home item’s featuredProjects array in config/nav
 ```
 "featuredProjects": ["project-1", "project-2", "my-project"]
 ```
-<br/>
 
 Project list can be added as a markdown line:
 
