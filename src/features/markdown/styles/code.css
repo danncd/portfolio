@@ -78,30 +78,16 @@
     min-width: 100%;
 }
 .markdown .diff-line.addition {
-    color: #39704a;
-    background: #edf5ee;
+    color: light-dark(#39704a, #9ccb9a);
+    background: light-dark(#edf5ee, #243529);
 }
 .markdown .diff-line.deletion {
-    color: #aa544b;
-    background: #fff0ed;
+    color: light-dark(#aa544b, #ecaaa3);
+    background: light-dark(#fff0ed, #3a2626);
 }
 .markdown .diff-line.file {
     color: var(--color-section);
 }
 .markdown .diff-line.hunk {
-    color: #59738b;
-}
-
-@media (prefers-color-scheme: dark) {
-    .markdown .diff-line.addition {
-        color: #9ccb9a;
-        background: #243529;
-    }
-    .markdown .diff-line.deletion {
-        color: #ecaaa3;
-        background: #3a2626;
-    }
-    .markdown .diff-line.hunk {
-        color: #94b3cc;
-    }
+    color: light-dark(#59738b, #94b3cc);
 }

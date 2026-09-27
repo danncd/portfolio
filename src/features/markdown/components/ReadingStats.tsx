@@ -28,7 +28,7 @@ export function ReadingStats({ words, minutes, updatedAt }: Props) {
             <time
                 dateTime={updatedAt}
                 aria-label={`Updated ${date}`}
-                className="border-l border-divider pl-3"
+                className="border-l border-divider pl-3 max-[400px]:hidden"
             >
                 <span className="hidden sm:inline">Updated </span>
                 {date}

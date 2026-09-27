@@ -18,7 +18,7 @@ export function SidebarToggle({
             ref={ref}
             id="sidebar-toggle"
             type="button"
-            className="sidebar-toggle flex items-center justify-center text-muted"
+            className="sidebar-control flex items-center justify-center text-muted"
             onClick={onClick}
             aria-label={open ? "Close sidebar" : "Open sidebar"}
             aria-expanded={open}

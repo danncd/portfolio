@@ -1,12 +1,12 @@
 .markdown {
-    --syntax-keyword: #9250a3;
-    --syntax-string: #9a4934;
-    --syntax-number: #236e68;
-    --syntax-title: #316baf;
-    --syntax-type: #867019;
-    --syntax-comment: #70806d;
-    --syntax-property: #366b93;
-    --syntax-symbol: #875936;
+    --syntax-keyword: light-dark(#9250a3, #c792d8);
+    --syntax-string: light-dark(#9a4934, #d99a86);
+    --syntax-number: light-dark(#236e68, #7fcac0);
+    --syntax-title: light-dark(#316baf, #8ab4e6);
+    --syntax-type: light-dark(#867019, #d9c27a);
+    --syntax-comment: light-dark(#70806d, #9eaf99);
+    --syntax-property: light-dark(#366b93, #8eb9d9);
+    --syntax-symbol: light-dark(#875936, #c9a17e);
 }
 .markdown pre .hljs-keyword,
 .markdown pre .hljs-selector-tag,
@@ -57,17 +57,4 @@
 }
 .markdown pre .hljs-strong {
     font-weight: 600;
-}
-
-@media (prefers-color-scheme: dark) {
-    .markdown {
-        --syntax-keyword: #c792d8;
-        --syntax-string: #d99a86;
-        --syntax-number: #7fcac0;
-        --syntax-title: #8ab4e6;
-        --syntax-type: #d9c27a;
-        --syntax-comment: #9eaf99;
-        --syntax-property: #8eb9d9;
-        --syntax-symbol: #c9a17e;
-    }
 }
