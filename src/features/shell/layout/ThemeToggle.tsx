@@ -29,7 +29,6 @@ const getServerTheme = (): Theme => "light";
 export function ThemeToggle() {
     const theme = useSyncExternalStore(subscribe, getTheme, getServerTheme);
     const label = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
-    const Icon = theme === "dark" ? Sun : Moon;
 
     function toggleTheme() {
         const next = getTheme() === "dark" ? "light" : "dark";
@@ -44,12 +43,14 @@ export function ThemeToggle() {
     return (
         <button
             type="button"
-            className="sidebar-control theme-toggle flex items-center justify-center text-muted"
+            className="theme-toggle flex items-center justify-center text-muted"
             onClick={toggleTheme}
             aria-label={label}
             title={label}
         >
-            <Icon size={15} weight="regular" aria-hidden="true" className="relative z-10" />
+            {/* CSS selects the icon before hydration, just like the page colors. */}
+            <Sun size={15} weight="regular" aria-hidden="true" className="theme-icon-sun" />
+            <Moon size={15} weight="regular" aria-hidden="true" className="theme-icon-moon" />
         </button>
     );
 }

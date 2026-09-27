@@ -13,9 +13,23 @@
     --ease-sidebar: ease;
 }
 
+:root {
+    --theme-icon-sun: none;
+    --theme-icon-moon: block;
+}
+
 :root[data-theme="light"] {
     color-scheme: light;
 }
 :root[data-theme="dark"] {
     color-scheme: dark;
+    --theme-icon-sun: block;
+    --theme-icon-moon: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        --theme-icon-sun: block;
+        --theme-icon-moon: none;
+    }
 }

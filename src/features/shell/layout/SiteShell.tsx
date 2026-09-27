@@ -5,7 +5,6 @@ import type { CSSProperties, ReactNode } from "react";
 import type { SidebarSettings } from "../state/geometry";
 import { Sidebar } from "../sidebar/Sidebar";
 import { SidebarResizeHandle } from "../sidebar/SidebarResizeHandle";
-import { ThemeToggle } from "../sidebar/ThemeToggle";
 import { SidebarToggle } from "../sidebar/SidebarToggle";
 import { useSidebarLayout } from "../hooks/useSidebarLayout";
 import { useMobileDialog } from "../hooks/useMobileDialog";
@@ -66,10 +65,7 @@ export function SiteShell({
                 <Sidebar name={name} logo={logo} open={layout.open}>
                     {navigation(layout.closeMobile)}
                 </Sidebar>
-                <div className="sidebar-controls">
-                    <SidebarToggle ref={toggle} open={layout.open} onClick={layout.toggle} />
-                    <ThemeToggle />
-                </div>
+                <SidebarToggle ref={toggle} open={layout.open} onClick={layout.toggle} />
                 {layout.desktopOpen && !layout.mobile && (
                     <SidebarResizeHandle
                         width={layout.width}

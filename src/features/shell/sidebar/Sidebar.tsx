@@ -14,7 +14,7 @@ export function Sidebar({
     return (
         <aside id="sidebar" className="sidebar-panel bg-sidebar" inert={!open} aria-label="Sidebar">
             <div className="sidebar-inner flex h-full flex-col">
-                <div className="flex h-(--header-height) shrink-0 items-center gap-2 pl-5 pr-[90px] text-[14px] font-semibold">
+                <div className="flex h-(--header-height) shrink-0 items-center gap-2 pl-5 pr-14 text-[14px] font-semibold">
                     {logo && (
                         <span
                             aria-hidden="true"
