@@ -14,7 +14,7 @@
                         "title": "Home",
                         "content": "home.md"
                     },
-                    "featuredProjects": ["qc-schedules", "anime-list", "arx", "item-frame-cache"]
+                    "featuredProjects": ["arx", "anime-list", "qc-schedules", "item-frame-cache"]
                 }
             ]
         },
