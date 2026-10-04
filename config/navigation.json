@@ -33,6 +33,17 @@
                     },
                     "children": [
                         {
+                            "id": "arx",
+                            "label": "Arx",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/arx",
+                                "title": "Arx",
+                                "content": "projects/arx.md",
+                                "description": "A terminal coding agent in Go."
+                            }
+                        },
+                        {
                             "id": "qc-schedules",
                             "label": "QC Schedules",
                             "icon": "list",
@@ -52,17 +63,6 @@
                                 "title": "Anime List",
                                 "content": "projects/anime-list.md",
                                 "description": "Anime and manga on macOS."
-                            }
-                        },
-                        {
-                            "id": "arx",
-                            "label": "Arx",
-                            "icon": "list",
-                            "page": {
-                                "path": "/projects/coding/arx",
-                                "title": "Arx",
-                                "content": "projects/arx.md",
-                                "description": "A terminal coding agent in Go."
                             }
                         },
                         {
