@@ -1,6 +1,6 @@
 ## About me
 
-Hi, I'm Danny, a computer science student at Queens College in New York. I'm currently exploring full-stack development, cloud technologies, and machine learning. In addition, I'm interested in medicine and am exploring projects that connect it with software engineering.
+Hi, I'm Danny, a computer science student at Queens College in New York. I'm currently exploring full-stack development, cloud technologies, and machine learning.
 
 On this website, you can find my projects and the work behind them.
 
