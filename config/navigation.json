@@ -14,7 +14,7 @@
                         "title": "Home",
                         "content": "home.md"
                     },
-                    "featuredProjects": ["arx", "anime-list", "qc-schedules", "item-frame-cache"]
+                    "featuredProjects": ["arx", "anime-list", "qc-schedules", "item-frame-cache", "palettes"]
                 }
             ]
         },
@@ -63,6 +63,17 @@
                                 "title": "Anime List",
                                 "content": "projects/anime-list.md",
                                 "description": "Anime and manga on macOS."
+                            }
+                        },
+                        {
+                            "id": "palettes",
+                            "label": "Palettes",
+                            "icon": "list",
+                            "page": {
+                                "path": "/projects/coding/palettes",
+                                "title": "Palettes",
+                                "content": "projects/palettes.md",
+                                "description": "Generate, refine, and export color palettes."
                             }
                         },
                         {
